@@ -1,0 +1,79 @@
+/*Styles <3*/
+:root {
+    --background: rgb(238,239,233);
+    --dark: rgb(74,74,74)
+}
+
+body {
+    font-family: monospace;
+    margin: 0px 0px 0px 20px;
+    font-size: 18px;
+    font-color: var(--dark);
+    background-color: var(--background);
+    text-align: center;
+    overflow: hidden; /* no scrolling for u bucko*/
+    height: 100%; 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: solid black 2px;
+}
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 2vh;
+}
+.topleft:hover, .topright:hover {
+    color: green;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: 10vh;
+}
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+.typewriter h1 {
+    font-family: monospace;
+    font-size: 3rem;
+    margin-inline: auto;
+    overflow: hidden;
+    margin-bottom: -2px;
+    /* keeps it on single line.*/
+    white-space: nowrap;
+    /*cursor*/
+    border-right: 1px solid;
+    /*steps = number of characters*/
+    animation: typing 3s steps(11) forwards, blink 1s step-end infinite;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Typewriter animations */
+@keyframes typing {
+    from {
+        width: 0;
+    } to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
