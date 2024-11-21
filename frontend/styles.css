@@ -76,6 +76,24 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 10px;
+}
+.email-box, .password-box, .login {
+    margin: 5px;
+    
+}
+.email-box, .password-box {
+    background-color: var(--dark);
+    border: none;
+    width: 150%;
+    padding: 5px;
+} ::placeholder {
+    color: var(--background);
+    text-align: center;
+}
+button {
+    border: solid var(--dark) 2px;
+    background-color: var(--background);
 }
 /* Typewriter animations */
 @keyframes typing {
