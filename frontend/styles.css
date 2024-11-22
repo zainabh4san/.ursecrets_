@@ -1,4 +1,6 @@
 /*Styles <3*/
+
+/* Custom Colours */
 :root {
     --background: rgb(238,239,233);
     --dark: rgb(74,74,74);
@@ -20,7 +22,12 @@ a,a:focus, a:active {
 }
 a:hover {
     text-decoration: underline;
-    
+}
+.captions, .login-container-to-pages {
+    line-height: 15px;
+}
+.captions {
+    font-weight: bold;
 }
 .topnav {
     display: flex;
@@ -28,6 +35,7 @@ a:hover {
     align-items: center;
     padding: 10px 20px;
     margin-top: 2vh;
+    font-weight: bold;
 }
 .topleft:hover, .topright:hover {
     text-decoration: underline;
@@ -77,10 +85,11 @@ a:hover {
     align-items: center;
     text-align: center;
     margin: 10px;
+    font-family: BlinkMacSystemFont;
+    font-weight: 600;
 }
 .email-box, .password-box, .login {
     margin: 5px;
-    
 }
 .email-box, .password-box {
     background-color: var(--dark);
@@ -89,7 +98,6 @@ a:hover {
     padding: 5px;
 } ::placeholder, input {
     color: var(--background);
-    text-align: center;
 }
 button {
     border: solid var(--dark) 2px;
