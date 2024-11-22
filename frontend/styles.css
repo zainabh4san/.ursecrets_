@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: monospace;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0px 0px 0px 20px;
     font-size: 18px;
     font-color: var(--dark);
@@ -87,7 +87,7 @@ a:hover {
     border: none;
     width: 150%;
     padding: 5px;
-} ::placeholder {
+} ::placeholder, input {
     color: var(--background);
     text-align: center;
 }
