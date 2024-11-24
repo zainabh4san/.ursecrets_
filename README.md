@@ -1,11 +1,11 @@
-# Project Title
+# _ursecrets. (WIP)
 
-Examples of client/server applications
+Insert GIFS.
 
 ## Description
 
 Server side code includes endpoints that interact with files, as well as
-endpoints to support a game of "hangman".
+endpoints to support diary entries.
 
 ## Getting Started
 
@@ -14,22 +14,17 @@ endpoints to support a game of "hangman".
 Requires the JS express, fs and cors packages.  
 
 ### Installing
-
-cd into the backend folder and install express, fs and cors packages as follows:
-
+```
 npm i cors
 npm i fs
 npm i express
-
+```
 ### Executing program
 
 To start the server, cd into the backend folder and type
-
+```
+cd backend
 node server_side.js
+```
 
-Server will run by default at http://localhost:3000/
-
-To play a game of hangman, load "game.html" in the frontend folder into a browser.
-
-To view some other simple interactions with an API, load "index.html" in the frontend folder into a browser.
-
+Server will run by default at http://localhost:3000/.
