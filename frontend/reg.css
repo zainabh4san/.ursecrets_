@@ -1,0 +1,102 @@
+/* registration and login css. */
+
+:root {
+    --background: rgb(238,239,233);
+    --dark: rgb(74,74,74);
+}
+
+
+
+body {
+    padding-top: 90px;
+    font-family: "Clash Display";
+    margin: 0px 0px 0px 20px;
+    font-size: 18px;
+    background-color: rgb(238,239,233);
+    text-align: center;
+    overflow: hidden; /* no scrolling for u bucko*/
+    height: 100%;
+    justify-content: center;
+}
+
+
+.topnav {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 2vh;
+    font-weight: bold;
+    
+}
+.topleft:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.typewriter h2 {
+    color: rgb(36, 35, 35);
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Clash Display"; /* font change - m */
+    font-weight: 500;
+    font-size: 3rem;
+    margin-inline: auto;
+    overflow: hidden;
+    margin-bottom: -2px;
+    /* keeps it on single line.*/
+    white-space: nowrap;
+    /*cursor*/
+    border-right: 1px solid;
+    /*steps = number of characters*/
+    animation: typing 1s steps(11) forwards, blink 1s step-end infinite;
+}
+
+
+#email {
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#password {
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#repassword {
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin-top: 20px;
+}
+
+button {
+    border: solid var(--dark) 2px;
+    background-color: var(--background);
+    font-family: "Clash Display";
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } to {
+        width: 27%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+

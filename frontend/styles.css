@@ -7,10 +7,10 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Clash Display";
     margin: 0px 0px 0px 20px;
     font-size: 18px;
-    font-color: var(--dark);
+    color: var(--dark);
     background-color: var(--background);
     text-align: center;
     overflow: hidden; /* no scrolling for u bucko*/
@@ -27,7 +27,10 @@ a:hover {
     line-height: 15px;
 }
 .captions {
-    font-weight: bold;
+    font-weight: 10;
+}
+.login {
+    font-weight: 500;
 }
 .topnav {
     display: flex;
@@ -62,11 +65,13 @@ a:hover {
     margin-bottom: 10vh;
 }
 .typewriter {
+    
     display: flex;
     justify-content: center;
 }
 .typewriter h1 {
-    font-family: monospace;
+    font-family: "Clash Display"; /* font change - */
+    font-weight: 500;
     font-size: 3rem;
     margin-inline: auto;
     overflow: hidden;
@@ -116,4 +121,3 @@ button {
         border-color: transparent;
     }
 }
-
