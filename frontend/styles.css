@@ -4,7 +4,7 @@
 :root {
     --background: rgb(238,239,233);
     --dark: rgb(74,74,74);
-    --lightdark: (36,35,35);
+    --lightdark: rgb(36,35,35);
 }
 
 body {

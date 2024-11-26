@@ -1,9 +1,9 @@
-/* registration and login css. */
+/* registration and forgot pass css. */
 
 :root {
     --background: rgb(238,239,233);
     --dark: rgb(74,74,74);
-    --lightdark: (36,35,35);
+    --lightdark: rgb(36,35,35);
 }
 
 
@@ -32,6 +32,7 @@ body {
     cursor: pointer;
 }
 #back-button {
+    color: var(--lightdark);
     cursor: pointer;
     text-decoration: none;
     font-size: 32px;
