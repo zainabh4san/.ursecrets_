@@ -4,18 +4,17 @@
 :root {
     --background: rgb(238,239,233);
     --dark: rgb(74,74,74);
+    --lightdark: (36,35,35);
 }
 
 body {
     font-family: "Clash Display";
-    margin: 0px 0px 0px 20px;
     font-size: 18px;
     color: var(--dark);
     background-color: var(--background);
     text-align: center;
     overflow: hidden; /* no scrolling for u bucko*/
     height: 100%;
-    //display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -45,6 +44,7 @@ a:hover {
 }
 .topleft:hover, .topright:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 .sidenav {
     height: 100%;
@@ -64,15 +64,15 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 35em;
+    min-height: 43em;
     padding: 20px;
 }
 .typewriter {
-    
     display: flex;
     justify-content: center;
 }
 .typewriter h1 {
+    color: var(--lightdark);
     font-family: "Clash Display"; /* font change - */
     font-weight: 500;
     font-size: 3rem;
@@ -84,7 +84,7 @@ a:hover {
     /*cursor*/
     border-right: 1px solid;
     /*steps = number of characters*/
-    animation: typing 1s steps(11) forwards, blink 1s step-end infinite;
+    animation: typing 1s steps(21) forwards, blink 1s step-end infinite;
 }
 .forms {
     display: flex;
@@ -93,7 +93,6 @@ a:hover {
     align-items: center;
     text-align: center;
     margin: 10px;
-    font-family: BlinkMacSystemFont;
     font-weight: 600;
 }
 .email-box, .password-box, .login {
@@ -106,6 +105,8 @@ a:hover {
     padding: 5px;
 } ::placeholder, input {
     color: var(--background);
+    font-family: "Clash Display";
+    font-weight: 600;
 }
 button {
     border: solid var(--dark) 2px;
