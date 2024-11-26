@@ -89,7 +89,7 @@ button {
     from {
         width: 0;
     } to {
-        width: 27%;
+        width: 100%;
     }
 }
 @keyframes blink {
