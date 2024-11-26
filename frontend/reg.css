@@ -12,7 +12,7 @@ body {
     font-family: "Clash Display";
     margin: 0px 0px 0px 20px;
     font-size: 18px;
-    background-color: rgb(238,239,233);
+    background-color: var(--background);
     text-align: center;
     overflow: hidden; /* no scrolling for u bucko*/
     height: 100%;
@@ -34,7 +34,7 @@ body {
     color: black;
 }
 
-.typewriter h2 {
+.typewriter h1 {
     color: rgb(36, 35, 35);
     font-weight: 600;
     font-size: 50px;
@@ -58,6 +58,16 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    margin-bottom: 10vh;
 }
 
 #password {
