@@ -49,7 +49,7 @@ body {
     /*cursor*/
     border-right: 1px solid;
     /*steps = number of characters*/
-    animation: typing 1s steps(11) forwards, blink 1s step-end infinite;
+    animation: typing 1s steps(27) forwards, blink 1s step-end infinite;
 }
 
 
