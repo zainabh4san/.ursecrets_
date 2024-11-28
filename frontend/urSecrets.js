@@ -1,4 +1,67 @@
-var myID; //global variable to store user ID
+
+// start of client side js.
+
+const form = document.getElementById('form');
+const password = document.getElementsByClassName("password-box");
+const email = document.getElementsByClassName('email-box');
+const error = document.getElementById('error')
+
+
+
+
+form.addEventListener('submit', (e) => {
+    let messages = []
+    if (password.value.length <= 8) {
+        messages.push('username must be at least 8 characters.')
+
+    }
+    if (password.value.length >= 15) {
+        messages.push('username must be shorter than 15 characters.')
+
+    }
+
+    if (messages.length > 0) {
+        e.preventDefault()
+        error.innerText = messages.join(', ')
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* var myID; //global variable to store user ID - KEEP COMMENTED IN CASE OF FUTURE REFERENCE
 var guessWord; //global variable to store guesses as to the secret word
 
 /** 
@@ -6,7 +69,7 @@ var guessWord; //global variable to store guesses as to the secret word
  * 
  * @param {boolean} winner if the game ended because we won
  * @param {boolean} start if this is the first game
-*/
+
 function resetGame( winner, start ) {
 
     if (winner && !start) alert("You win!");
@@ -28,7 +91,7 @@ function resetGame( winner, start ) {
 
 /** 
  * Make a guess
-*/
+
 async function makeGuess() {
 
     const request = {
@@ -55,7 +118,7 @@ async function makeGuess() {
 
 /** 
  * Print the current guess to the HTML.
-*/
+
 function printGuess() {
     var guessArea = document.getElementById('guessarea');
     guessArea.textContent = guessWord.join('');
@@ -64,14 +127,14 @@ function printGuess() {
 
 /** 
  * Clears the guess box in the DOM
- */
+ 
 function clearGuess() {
     document.hangman.elements["guess"].value = ""; //reset the guess box
 }
 
 /** 
  * updates the list of wrong letters in the DOM
- */
+ 
 function updateWrongLetters() {
     var guessedLetter = document.hangman.elements["guess"].value;
     //Add this letter to the letters in the HTML element with the ID "mistakes"  
@@ -84,7 +147,7 @@ function updateWrongLetters() {
  * Decode the response from the server after making a guess.
  * 
  * @param {object} response the response object from the server.
-*/
+
 function evaluate(response) {
 
     //retrieve info from the response

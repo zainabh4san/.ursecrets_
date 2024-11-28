@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="reg.css" title="style" />
     <link href="https://www.fontshare.com/fonts/clash-display" rel = "stylesheet"/>
+    <script defer src="urSecrets.js"></script>
     <title> _ursecrets. | create </title>
 </head>
 <body>
@@ -14,10 +15,11 @@
         <div class="topnav">
             <div class="topleft" id="back-button"><a href="home.html"><</a></div>
           </div>
+          <div id = "error"></div>
         <div class="main">
             <span class = "typewriter"><h1>_.create-account.</h1></span>
             <span class = "captions"><p>make ur account.</p></span>
-            <form action="home.html" method="POST">
+            <form id = "form" action="" method="GET">
                 <div class="forms">
                   <input type="email" placeholder="email." class="email-box" required>
                   <input type="password" placeholder="password." class="password-box" required>

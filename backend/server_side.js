@@ -2,6 +2,7 @@ const express = require('express'); //to run a server application
 const fs = require("fs"); //to read and write to a file
 const cors = require("cors"); //to get around cors issues.  browsers may restrict cross-origin HTTP requests initiated from scripts!
 
+
 const app = express();
 const port = 3000;
 
@@ -55,7 +56,44 @@ app.get('/writefile', (req, res) => {
 
 })
 
-// GAME IMPLEMENTATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GAME IMPLEMENTATION - keep commented incase of need for future reference!
 
 //for the game implementation
 var idCounter = 0; //a global user ID couunter; each user has a unique ID
@@ -65,7 +103,7 @@ var gameInfo = {}; //store game information for each user
 /** 
 * generate a word (get endpoint)
 */
-app.get('/generateWord', (req, res) => {
+/*app.get('/generateWord', (req, res) => {
     //generate a word and ID for this user
     
     var userID = idCounter++;
@@ -86,7 +124,7 @@ app.get('/generateWord', (req, res) => {
 // POST ENDPOINTS
 /** 
 * Make a guess (post endpoint)
-*/
+
 app.post('/makeGuess', (req, res) => {
 
     //generate a word and ID for this user    
@@ -116,7 +154,7 @@ app.listen(port, () => {
 * secret word and error count is stored in global variable (gameInfo)
 *
 * @param {number} clientID
-*/
+
 function generateWord(clientID) {
 
     var possibleWords = [
@@ -147,7 +185,7 @@ function generateWord(clientID) {
 * @param {string} letterGuess 
 * @param {string} attemptWord 
 * @return {object} array containing a BOOLEAN, a NUMBER, and attemptWord (an array)
-*/
+
 function makeGuess(inputID, letterGuess, attemptWord) {
   
     var input = gameInfo[inputID]; //get game info for this user
